@@ -10,4 +10,4 @@ Clone this repo and run in Xcode
 
 ## License
 
-MIT
+[MIT](./LICENSE)
