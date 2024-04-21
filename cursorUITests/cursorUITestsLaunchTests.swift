@@ -2,13 +2,12 @@
 //  cursorUITestsLaunchTests.swift
 //  cursorUITests
 //
-//  Created by Ling Chia Sheng on 06/04/2024.
+//  Created by zdirnecamlcs96 on 06/04/2024.
 //
 
 import XCTest
 
 final class cursorUITestsLaunchTests: XCTestCase {
-
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
     }

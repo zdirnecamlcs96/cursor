@@ -2,13 +2,12 @@
 //  cursorUITests.swift
 //  cursorUITests
 //
-//  Created by Ling Chia Sheng on 06/04/2024.
+//  Created by zdirnecamlcs96 on 06/04/2024.
 //
 
 import XCTest
 
 final class cursorUITests: XCTestCase {
-
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
 

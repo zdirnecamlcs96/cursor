@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		153C97882BC11B2B00C83A56 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153C97872BC11B2B00C83A56 /* SettingView.swift */; };
+		153C978D2BC1411600C83A56 /* SettingsAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 153C978C2BC1411600C83A56 /* SettingsAccess */; };
 		1577CB192BC1098800138F5F /* cursorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1577CB182BC1098800138F5F /* cursorApp.swift */; };
 		1577CB1B2BC1098800138F5F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1577CB1A2BC1098800138F5F /* ContentView.swift */; };
 		1577CB1D2BC1098900138F5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1577CB1C2BC1098900138F5F /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 		1577CB2B2BC1098900138F5F /* cursorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1577CB2A2BC1098900138F5F /* cursorTests.swift */; };
 		1577CB352BC1098900138F5F /* cursorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1577CB342BC1098900138F5F /* cursorUITests.swift */; };
 		1577CB372BC1098900138F5F /* cursorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1577CB362BC1098900138F5F /* cursorUITestsLaunchTests.swift */; };
+		1577CB442BC10AB800138F5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1577CB432BC10AB800138F5F /* AppDelegate.swift */; };
+		15F3A1EB2BD3A9B200976CC8 /* GlobalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F3A1EA2BD3A9B200976CC8 /* GlobalState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		153C97862BC1163B00C83A56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		153C97872BC11B2B00C83A56 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		1577CB152BC1098800138F5F /* cursor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cursor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1577CB182BC1098800138F5F /* cursorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cursorApp.swift; sourceTree = "<group>"; };
 		1577CB1A2BC1098800138F5F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +51,8 @@
 		1577CB302BC1098900138F5F /* cursorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cursorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1577CB342BC1098900138F5F /* cursorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cursorUITests.swift; sourceTree = "<group>"; };
 		1577CB362BC1098900138F5F /* cursorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cursorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1577CB432BC10AB800138F5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		15F3A1EA2BD3A9B200976CC8 /* GlobalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				153C978D2BC1411600C83A56 /* SettingsAccess in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,11 +104,15 @@
 		1577CB172BC1098800138F5F /* cursor */ = {
 			isa = PBXGroup;
 			children = (
+				153C97862BC1163B00C83A56 /* Info.plist */,
 				1577CB182BC1098800138F5F /* cursorApp.swift */,
 				1577CB1A2BC1098800138F5F /* ContentView.swift */,
 				1577CB1C2BC1098900138F5F /* Assets.xcassets */,
 				1577CB212BC1098900138F5F /* cursor.entitlements */,
 				1577CB1E2BC1098900138F5F /* Preview Content */,
+				1577CB432BC10AB800138F5F /* AppDelegate.swift */,
+				153C97872BC11B2B00C83A56 /* SettingView.swift */,
+				15F3A1EA2BD3A9B200976CC8 /* GlobalState.swift */,
 			);
 			path = cursor;
 			sourceTree = "<group>";
@@ -145,6 +158,9 @@
 			dependencies = (
 			);
 			name = cursor;
+			packageProductDependencies = (
+				153C978C2BC1411600C83A56 /* SettingsAccess */,
+			);
 			productName = cursor;
 			productReference = 1577CB152BC1098800138F5F /* cursor.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +233,9 @@
 				Base,
 			);
 			mainGroup = 1577CB0C2BC1098800138F5F;
+			packageReferences = (
+				153C978B2BC1411600C83A56 /* XCRemoteSwiftPackageReference "SettingsAccess" */,
+			);
 			productRefGroup = 1577CB162BC1098800138F5F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,6 +278,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1577CB442BC10AB800138F5F /* AppDelegate.swift in Sources */,
+				153C97882BC11B2B00C83A56 /* SettingView.swift in Sources */,
+				15F3A1EB2BD3A9B200976CC8 /* GlobalState.swift in Sources */,
 				1577CB1B2BC1098800138F5F /* ContentView.swift in Sources */,
 				1577CB192BC1098800138F5F /* cursorApp.swift in Sources */,
 			);
@@ -429,11 +451,14 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = cursor/Info.plist;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.cursor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -456,11 +481,14 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = cursor/Info.plist;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.cursor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -581,6 +609,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		153C978B2BC1411600C83A56 /* XCRemoteSwiftPackageReference "SettingsAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/orchetect/SettingsAccess";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		153C978C2BC1411600C83A56 /* SettingsAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 153C978B2BC1411600C83A56 /* XCRemoteSwiftPackageReference "SettingsAccess" */;
+			productName = SettingsAccess;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1577CB0D2BC1098800138F5F /* Project object */;
 }
